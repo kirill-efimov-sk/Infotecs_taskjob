@@ -1,0 +1,129 @@
+.container__personlist
+  display: flex
+  align-items: stretch
+  justify-content: space-around
+  width: 50%
+
+.personlist
+  background-color: #343c42
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-block-start: 0
+  padding-inline-start: 0
+  min-width: 100%
+  cursor: default
+
+.person 
+  display: flex
+  width: 100%
+  height: 45px
+.person:nth-child(even)
+  background: #7e788b4d
+.person:first-child
+  background: #29223a70
+
+li>.person:first-child
+  border-top: 1px solid #ffffff45
+  border-bottom: 1px solid #ffffff45
+  background: #272d33
+.person:first-child:hover
+  background: #29223a70
+  cursor: pointer
+.person__filter
+  display: block
+.person__filter:after
+  display: inline-block
+  width: 5px
+  padding-left: 5px
+  content: '\2195'
+  color: #81919e
+.person__filterDown:after
+  content: '\2193'
+.person__filterUp:after
+  content: '\2191'
+.person:first-child>div:hover:after
+  color: #e1e4e6
+.person:hover 
+  background-color: #0c03231a
+  color: #ffffffd5
+.person>div
+  border-left: 0.1px solid #4c555a
+  border-right: 0.1px solid #4c555a
+
+
+.person__firstname
+  width: 15%
+  min-width: 15%
+  padding: 5px
+  overflow: hidden
+  text-overflow: ellipsis
+.person__firstname:hover
+  background-color: #0c03233d
+  box-shadow: 0px 0px 2px #662fbed5
+  color: #ffffffd5
+  transition: 0.1s
+
+.person__lastname
+  width: 15%
+  min-width: 15%
+  padding: 5px
+  overflow: hidden
+  text-overflow: ellipsis
+.person__lastname:hover 
+  background-color: #0c03233d
+  box-shadow: 0px 0px 2px #662fbed5
+  color: #ffffffd5
+  transition: 0.1s
+
+.person__about
+  width: 60%
+  min-width: 15%
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2
+  overflow: hidden
+  padding: 5px
+  text-overflow: ellipsis
+.person__about:hover
+  background-color: #0c03233d
+  box-shadow: 0px 0px 2px #662fbed5
+  color: #ffffffd5
+  transition: 0.1s
+
+.person__eyeColor
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 10%
+  min-width: 15%
+  padding: 5px
+  overflow: hidden
+  text-overflow: ellipsis
+.person__eyeColor:hover
+  background-color: #0c03233d
+  box-shadow: 0px 0px 2px #662fbed5
+  color: #ffffffd5
+  transition: 0.1s
+  opacity: 1
+.eyeColor__component
+  width: 20%
+  height: 50%
+  margin: 0
+  border-radius: 10%
+  opacity: 0.7
+.eyeColor__component:hover
+  width: 35%
+  height: 65%
+  opacity: 1
+  transition: 0.3s
+  cursor: zoom-in
+.eyeColor__component:before 
+  content: ""
+  display: inline-block
+  vertical-align: middle
+
+.editing__element
+  border: 1px solid #f72828f6
+  background-color: #2927219e

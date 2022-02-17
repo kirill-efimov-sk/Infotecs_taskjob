@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.container__personlist {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.personlist {
+  background-color: #343c42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  min-width: 100%;
+  cursor: default;
+}
+
+.person {
+  display: flex;
+  width: 100%;
+  height: 45px;
+}
+
+.person:nth-child(even) {
+  background: #7e788b4d;
+}
+
+.person:first-child {
+  background: #29223a70;
+}
+
+li > .person:first-child {
+  border-top: 1px solid #ffffff45;
+  border-bottom: 1px solid #ffffff45;
+  background: #272d33;
+}
+
+.person:first-child:hover {
+  background: #29223a70;
+  cursor: pointer;
+}
+
+.person__filter {
+  display: block;
+}
+
+.person__filter:after {
+  display: inline-block;
+  width: 5px;
+  padding-left: 5px;
+  content: "↕";
+  color: #81919e;
+}
+
+.person__filterDown:after {
+  content: "↓";
+}
+
+.person__filterUp:after {
+  content: "↑";
+}
+
+.person:first-child > div:hover:after {
+  color: #e1e4e6;
+}
+
+.person:hover {
+  background-color: #0c03231a;
+  color: #ffffffd5;
+}
+
+.person > div {
+  border-left: 0.1px solid #4c555a;
+  border-right: 0.1px solid #4c555a;
+}
+
+.person__firstname {
+  width: 15%;
+  min-width: 15%;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.person__firstname:hover {
+  background-color: #0c03233d;
+  box-shadow: 0px 0px 2px #662fbed5;
+  color: #ffffffd5;
+  transition: 0.1s;
+}
+
+.person__lastname {
+  width: 15%;
+  min-width: 15%;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.person__lastname:hover {
+  background-color: #0c03233d;
+  box-shadow: 0px 0px 2px #662fbed5;
+  color: #ffffffd5;
+  transition: 0.1s;
+}
+
+.person__about {
+  width: 60%;
+  min-width: 15%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+
+.person__about:hover {
+  background-color: #0c03233d;
+  box-shadow: 0px 0px 2px #662fbed5;
+  color: #ffffffd5;
+  transition: 0.1s;
+}
+
+.person__eyeColor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10%;
+  min-width: 15%;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.person__eyeColor:hover {
+  background-color: #0c03233d;
+  box-shadow: 0px 0px 2px #662fbed5;
+  color: #ffffffd5;
+  transition: 0.1s;
+  opacity: 1;
+}
+
+.eyeColor__component {
+  width: 20%;
+  height: 50%;
+  margin: 0;
+  border-radius: 10%;
+  opacity: 0.7;
+}
+
+.eyeColor__component:hover {
+  width: 35%;
+  height: 65%;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: zoom-in;
+}
+
+.eyeColor__component:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.editing__element {
+  border: 1px solid #f72828f6;
+  background-color: #2927219e;
+}
+
+.container__aboutPerson {
+  display: flex;
+  position: sticky;
+  padding-top: 10px;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 40%;
+  max-width: 500px;
+  height: 100%;
+  min-height: 250px;
+  top: 0;
+}
+
+.aboutPerson__form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 40%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: #ec1010;
+}
+
+.aboutPerson__before {
+  transition: 0.1s;
+  flex-direction: column;
+  color: #faf9f9;
+}
+
+.label__person, .inpur__person {
+  padding: 3px;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  cursor: text;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #20252b;
+  color: #ffffffb3;
+  margin: 20px 0 10px 0;
+}
+
+.person__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
